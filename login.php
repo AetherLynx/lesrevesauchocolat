@@ -14,7 +14,6 @@
     <div style="position: absolute;">
         <?php
         include("conns/conexion.php");
-        session_start();
         if (isset($_SESSION["error_logincr"])) {
             echo "
             <div class='popup'>
@@ -33,6 +32,15 @@
             </div>
             ";
             unset($_SESSION["action_logout"]);
+        } elseif (isset($_SESSION["info_passchangeMelo"])) {
+            echo "
+            <div class='popup'>
+                <div>
+                    <p>Cambiaste la contraseña a tu cuenta exitosamente.</p>
+                </div>
+            </div>
+            ";
+            unset($_SESSION["info_passchangeMelo"]);
         }
         ?>
     </div>
@@ -45,14 +53,14 @@
             <form method="post" action="conns/access.php">
                 <div>
                     <script>
-                    document.write(user);
+                        document.write(user);
                     </script>
                     <input type="text" placeholder="nombre de usuario" name="name" autocomplete="off" required>
                 </div>
                 <br>
                 <div>
                     <script>
-                    document.write(key);
+                        document.write(key);
                     </script>
                     <input type="password" placeholder="contraseña" name="pass" required>
                 </div>

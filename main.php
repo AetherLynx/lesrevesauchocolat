@@ -12,7 +12,6 @@
     <div style="position: absolute;">
         <?php
         include("conns/conexion.php");
-        session_start();
         ?>
     </div>
 </head>
@@ -23,7 +22,7 @@
             <a href="main.php">Sobre nosotros</a>
             <a onclick="closeSidebar()">
                 <script>
-                document.write(x);
+                    document.write(x);
                 </script>
             </a>
         </div>
@@ -34,12 +33,12 @@
         <div class="navbutts">
             <a href="conns/logout.php">
                 <script>
-                document.write(logout);
+                    document.write(logout);
                 </script>
             </a>
             <a onclick="toggleSidebar()">
                 <script>
-                document.write(list);
+                    document.write(list);
                 </script>
             </a>
         </div>

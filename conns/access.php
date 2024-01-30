@@ -5,6 +5,7 @@
     <?php
     include("conexion.php");
     session_start();
+
     if (isset($_POST["login"])) {
         unset($_SESSION["loggedin"]);
         $name = $_POST["name"];
@@ -40,6 +41,52 @@
         ";
         } else {
             createAccount($name, $pass, $mail, $question, $qanswer);
+        }
+    } elseif (isset($_POST["search_recoverMail"])) {
+        $recovMail = $_POST["recovMail"];
+
+        $sql = "SELECT * FROM userdata WHERE mail='$recovMail'";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            $recovQuestion = $row["question"];
+            $recovQanswer = $row["qanswer"];
+            $_SESSION["recov_isActive"] = true;
+            $_SESSION["recov_recovMail"] = $recovMail;
+            $_SESSION["recov_question"] = $recovQuestion;
+            $_SESSION["recov_qanswer"] = $recovQanswer;
+            header("location: ../recover.php");
+        } else {
+            $_SESSION["error_recovmail404"] = true;
+            header("location: ../recover.php");
+        }
+    } elseif (isset($_POST["input_modify"])) {
+        $input_qanswer = $_POST["input_qanswer"];
+        $input_newpass = $_POST["input_newpass"];
+        $recovMail = $_SESSION["recov_recovMail"];
+
+        $sql = "SELECT * FROM userdata WHERE mail='$recovMail'";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            $trueQanswer = $row["qanswer"];
+            if ($input_qanswer == $trueQanswer) {
+                $sql = "UPDATE userdata SET pass='$input_newpass' WHERE mail='$recovMail'";
+                $result = $conn->query($sql);
+                $_SESSION["info_passchangeMelo"] = true;
+
+                unset($_SESSION["recov_isActive"]);
+                unset($_SESSION["recov_recovMail"]);
+                unset($_SESSION["recov_question"]);
+                unset($_SESSION["recov_qanswer"]);
+
+                header("location: ../login.php");
+            } else {
+                $_SESSION["error_answerNotmatched"] = true;
+                header("location: ../recover.php");
+            }
         }
     }
 
