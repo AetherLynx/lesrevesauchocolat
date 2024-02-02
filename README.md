@@ -8,7 +8,7 @@
 - [ ] Admin site managing page (for catalog and users)
 
 ### Site features
-- [ ] Working sidebar
+- [X] Working sidebar
 - [ ] Page management account (1)
 - [ ] Cake creator (purble palace vamos) (2)
 - [ ] Milkshake designer
