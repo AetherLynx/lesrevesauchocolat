@@ -17,6 +17,7 @@
 - [ ] Bakery product catalog 
 - [ ] Ice cream product catalog
 - [ ] Pastry product catalog (better to merge all 3 together to save myself from kms)
+- [ ] Shopping cart interface
 - [ ] Admin catalog managing (adding, deleting or modyfing products)
 
 ### Designing
