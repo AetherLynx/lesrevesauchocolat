@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="scripts/icons.js"></script>
-    <title>Página de registro</title>
+    <title>Registro de usuario</title>
 </head>
 
 <body>
@@ -21,35 +21,35 @@
             <form method="post" action="conns/access.php">
                 <div class="alt">
                     <script>
-                    document.write(user);
+                        document.write(user);
                     </script>
                     <input type="text" placeholder="nombre" name="name" autocomplete="off" required>
                 </div>
                 <br>
                 <div class="alt">
                     <script>
-                    document.write(key);
+                        document.write(key);
                     </script>
                     <input type="password" placeholder="contraseña" name="pass" required>
                 </div>
                 <br>
                 <div class="alt">
                     <script>
-                    document.write(mail);
+                        document.write(mail);
                     </script>
                     <input type="text" placeholder="correo electronico" name="mail" autocomplete="off" required>
                 </div>
                 <br><br><br>
                 <div class="alt">
                     <script>
-                    document.write(question);
+                        document.write(question);
                     </script>
                     <input type="text" placeholder="pregunta de seguridad" name="question" autocomplete="off" required>
                 </div>
                 <br>
                 <div class="alt">
                     <script>
-                    document.write(answer);
+                        document.write(answer);
                     </script>
                     <input type="text" placeholder="respuesta de seguridad" name="qanswer" autocomplete="off" required>
                 </div>

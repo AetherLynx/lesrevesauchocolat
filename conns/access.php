@@ -4,7 +4,6 @@
 <body>
     <?php
     include("conexion.php");
-    session_start();
 
     if (isset($_POST["login"])) {
         unset($_SESSION["loggedin"]);

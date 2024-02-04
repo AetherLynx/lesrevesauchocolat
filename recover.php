@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="scripts/icons.js"></script>
-    <title>Recuperar cuenta</title>
+    <title>Recuperación de cuenta</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
             <form method="post" action="conns/access.php">
                 <div class="alt">
                     <script>
-                    document.write(mail);
+                        document.write(mail);
                     </script>
                     <input type="text" placeholder="correo electronico" name="recovMail" autocomplete="off" required>
                 </div>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="scripts/icons.js"></script>
-    <title>Inicio de sesión</title>
+    <title>Iniciar sesión</title>
 </head>
 
 <body>
