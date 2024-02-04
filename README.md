@@ -3,8 +3,10 @@
 
 ### Page Content
 - [ ] About us page <sub><sup>(Mission & Vision, all 3 categories of products that link to their product subpage)<sup><sub>
-- [ ] Product offers and recomendations page
+- [ ] Offers and recomendations
+- [X] Catalogue
 - [ ] Account managing page
+- [ ] Track orders
 - [ ] Admin site managing page (for catalog and users)
 
 ### Site features
@@ -14,9 +16,10 @@
 - [ ] Milkshake designer
 - [ ] Bread bag maker (3)
 - [ ] Live order tracking (4)
-- [ ] Bakery product catalog 
-- [ ] Ice cream product catalog
-- [ ] Pastry product catalog (better to merge all 3 together to save myself from kms)
+- [X] Fully working catalog
+- [X] Bakery product catalog 
+- [X] Ice cream product catalog
+- [X] Pastry product catalog (better to merge all 3 together to save myself from kms)
 - [ ] Shopping cart interface
 - [ ] Admin catalog managing (adding, deleting or modyfing products)
 
