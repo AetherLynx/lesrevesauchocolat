@@ -1,5 +1,5 @@
 ## Les Reves Au Chocolat
-#### (Task list is not done yet)
+(Task list is not done yet)
 
 ### Page Content
 - [ ] About us page <sub><sup>(Mission & Vision, all 3 categories of products that link to their product subpage)<sup><sub>
@@ -28,7 +28,8 @@
 - [ ] New sheep logo digitalized
 - [ ] Custom icons for product content indicators (nuts, soy, gluten, etc) and for product customization options (e.g milk type)
 
-1 - changing username, password, view amount of orders, view pending order, edit credentials (dir, telph, mail, etc)
-2 - choose type of cake, cake size, base cake flavor, cake layers, ((wip))
-3 - a custom menu that works as a shopping cart but designed as a bread bag, each bread you added to the cart will indicate its ingredients before ordering
-4 - im copying domino's on this one
+### refs
+- 1: changing username, password, view amount of orders, view pending order, edit credentials (dir, telph, mail, etc)
+- 2: choose type of cake, cake size, base cake flavor, cake layers, ((wip))
+- 3: a custom menu that works as a shopping cart but designed as a bread bag, each bread you added to the cart will indicate its ingredients before ordering
+- 4: im copying domino's on this one
