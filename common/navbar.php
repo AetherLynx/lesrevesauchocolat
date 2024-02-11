@@ -11,6 +11,9 @@ switch ($_SESSION["data_curPage"]) {
     case "viewproduct":
         $pagename = "Descripción de producto";
         break;
+    case "shopcart":
+        $pagename = "Tu carrito de compras";
+        break;
 }
 ?>
 
@@ -19,7 +22,7 @@ switch ($_SESSION["data_curPage"]) {
         <h1><?php echo $pagename ?></h1>
     </navbutts>
     <navbutts>
-        <a href="#">
+        <a href="shopcart.php">
             <div class="icontext">
                 <script>
                     document.write(cartn);

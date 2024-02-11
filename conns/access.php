@@ -13,9 +13,14 @@
         $sql = "SELECT * FROM userdata WHERE name = '$name' AND pass = '$pass'";
         $result = $conn->query($sql);
         if ($result->num_rows == 1) {
+            $row = $result->fetch_assoc();
             $_SESSION["loggedin"] = true;
-            $_SESSION["name"] = $name;
-            $_SESSION["pass"] = $pass;
+            $_SESSION["user_name"] = $row["name"];
+            $_SESSION["user_pass"] = $row["pass"];
+            $_SESSION["user_mail"] = $row["mail"];
+            $_SESSION["user_q"] = $row["question"];
+            $_SESSION["user_qa"] = $row["qanswer"];
+            $_SESSION["data_userinfoSet"] = true;
             header("location: ../main.php");
         } else {
             $_SESSION["error_logincr"] = true;

@@ -26,7 +26,7 @@ function printItems($result)
             $product_category = $row["product_category"];
             $product_image = $row["product_image"];
             echo "
-            <a href='viewproduct.php?id=" . $product_id . "' class='catalog-product'>
+            <a href='viewproduct.php?id=" . $product_id . "&isAdded=na&sc=0' class='catalog-product'>
                 <ptitle>
                     " . $product_name . "
                 </ptitle>
