@@ -8,7 +8,7 @@
     --co1: #F5EEE6;
     --co2: #FFF8E3;
     --co3: #F3D7CA;
-    --co4: #E6A4B4;
+    --co4: #dd8097;
 
     --co5: #E1F0DA;
     --co6: #ACFADF;
@@ -39,6 +39,30 @@
 
 /* CSS TAGS --------------------------------------------*/
 
+.mainRow {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+}
+
+.mainRow img[type="mbanner"] {
+    width: 30rem !important;
+}
+
+.titleicon {
+    display: flex;
+    align-items: center;
+}
+
+.titleicon svg {
+    margin: 0 !important;
+    margin-right: 1rem !important;
+}
 
 hr {
     border: 1px rgb(148, 173, 215, 50%) solid;
@@ -124,6 +148,14 @@ img[type="bbanner"] {
     border-radius: 0.5rem;
 }
 
+img[type="mbanner"] {
+    object-fit: cover;
+    height: 20rem;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 3rem !important;
+}
+
 input {
     transition: all 0.1s;
     margin: 10px;
@@ -132,7 +164,8 @@ input {
 
 input[type="text"],
 [type="password"],
-[type="number"] {
+[type="number"],
+[type="email"] {
     color: var(--co1);
     font-size: 20px;
     width: auto;
@@ -230,6 +263,57 @@ navbutts cont {
 
 
 /* CSS CLASSES --------------------------------------------*/
+
+.sc-item {
+    width: 100%;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    background: linear-gradient(90deg, rgba(247, 242, 255, 1) 30%, rgba(233, 220, 255, 1) 100%);
+    border-radius: 5px;
+    border: 0.1rem var(--co4) solid;
+    box-shadow: var(--brdshdw1);
+
+    transition: all 0.1s;
+}
+
+.sc-item:hover {
+    cursor: pointer;
+    filter: brightness(102%);
+}
+
+.sc-item img {
+    object-fit: cover;
+    width: 12rem;
+    height: 10rem;
+    border-radius: 5px;
+}
+
+.sc-item *:not(.sc-prodt *) {
+    padding: 0.2rem !important;
+    margin: 0.2rem !important;
+}
+
+.sc-prodt {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.sc-prodt p {
+    margin-top: 0 !important;
+}
+
 .catalog-filter {
     display: flex;
     flex-direction: row;
@@ -325,7 +409,11 @@ img[type="viewproduct"] {
 }
 
 h1[t="bb"],
-h2[t="bb"] {
+h2[t="bb"],
+h3[t="bb"],
+h4[t="bb"],
+h5[t="bb"],
+h6[t="bb"] {
     padding-bottom: 1rem;
     border-bottom: 1px var(--co4) solid;
 }
@@ -352,10 +440,22 @@ h2[t="bb"] {
     align-items: center;
     justify-content: center;
     text-align: center;
+
+    transition: all 0.05s;
 }
 
 .catalog-product * {
     margin: 0.5rem !important;
+}
+
+.catalog-product:hover {
+    filter: contrast(110%);
+    box-shadow: var(--lightshadow2);
+}
+
+.catalog-product:active {
+    filter: brightness(90%);
+    box-shadow: var(--lightshadow);
 }
 
 ptitle {
