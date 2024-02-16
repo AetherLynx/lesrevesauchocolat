@@ -7,7 +7,7 @@
 - [ ] 4. Trackeo de pedidos, dividido en 4 fases: Orden recibida -> Cocinando tu pedido -> Pedido Enviado -> Pedido Recibido
 - [ ] 5. Manejo de sitio para administradores, añadir productos, eliminar productos, revisar todos los pedidos vigentes y consultar usuarios e información
 - [X] 6. Barra lateral funcional
-- [ ] 7. Envasador de malteadas, diseñar un vaso ecológico re-usable para las malteadas
+- [ ] 7. Creador de pasteles personalizables.
 - [X] 8. Carrito de compras
 - [ ] 9. Perfil de usuario publico, para ver creaciones de otros y estadísticas
 - [ ] 10. Catálogo de pasteles personalizados hechos por usuarios (publicos)
