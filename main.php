@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="files/placeholdericon.png" type="image/x-icon">
     <script src="scripts/icons.js"></script>
     <title>Sobre nosotros</title>
 
@@ -26,14 +27,14 @@
         <div class="bodybg">
             <h1>¡Bienvenido a Les Reves Au Chocolat!</h1>
             <img type="bbanner" src="files/lrac_banner.png">
-            <p t="c" style="max-width: 100rem;">
+            <p class='main-medfont' t="c" style="max-width: 80rem; margin-bottom: 3em; margin-top: 3em">
                 Somos una empresa de productos de panadería, pastelería y heladería con el propósito
                 de ser accesible a los ciudadanos Colombianos, ofreciendo una gran cantidad de opciones
                 para personalizar sus pedidos a gusto.
             </p>
             <img type="mbanner" src="files/img_panaderia02.jpg">
             <h1>¿Qué servicios ofrecemos?</h1>
-            <p>Puedes darle a los botones para mirar productos de esa categoria.</p>
+            <p class='main-medfont'>Puedes darle a los botones para mirar productos de esa categoria.</p>
 
             <div class='mainRow'>
                 <div>

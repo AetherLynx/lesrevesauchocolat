@@ -1,6 +1,14 @@
 <?php
 if (isset($_GET["filter"])) {
     $filter = $_GET["filter"];
+    $_SESSION["data_curFilter"] = $_GET["filter"];
+
+    $category = ['', 'Panaderia', 'Heladeria', 'Pasteleria'];
+    show($conn, $category, $filter);
+} else {
+    $filter = "0";
+    $_SESSION["data_curFilter"] = "0";
+
     $category = ['', 'Panaderia', 'Heladeria', 'Pasteleria'];
     show($conn, $category, $filter);
 }
@@ -13,6 +21,7 @@ function show($conn, $category, $filter)
         $sql = "SELECT * FROM productdata";
     }
     $result = $conn->query($sql);
+    $_SESSION["data_productsGot"] = $result->num_rows;
     printItems($result);
 }
 
@@ -26,7 +35,7 @@ function printItems($result)
             $product_category = $row["product_category"];
             $product_image = $row["product_image"];
             echo "
-            <a href='viewproduct.php?id=" . $product_id . "&isAdded=na&sc=0' class='catalog-product'>
+            <a href='viewproduct.php?id=" . $product_id . "&sc=0' class='catalog-product'>
                 <ptitle>
                     " . $product_name . "
                 </ptitle>
@@ -40,7 +49,7 @@ function printItems($result)
                 <ptitle type='sub'>
                     PRECIO
                 </ptitle>
-                <ptitle>$" . $product_uniprice . "</ptitle>
+                <ptitle>$" . formatCop($product_uniprice) . "</ptitle>
             </a>
         ";
         }
@@ -49,4 +58,10 @@ function printItems($result)
     <img src='files/looking-around.gif' type='bbanner'>
     ";
     }
+}
+
+function formatCOP($value)
+{
+    $x = number_format($value, 0, '', '.');
+    return $x;
 }

@@ -1,5 +1,14 @@
 //SIDEBAR
 
+document.addEventListener("DOMContentLoaded", function () {
+
+    var popup = document.getElementById("popup"); //popups :3 
+
+    popup.addEventListener("animationend", () => {
+        popup.remove();
+    })
+});
+
 var open = false;
 
 function toggleSidebar() {
@@ -26,3 +35,7 @@ document.addEventListener('click', (event) => {
         closeSidebar();
     }
 });
+
+function goBack() {
+    window.history.back();
+}
