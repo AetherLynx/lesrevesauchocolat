@@ -1,7 +1,7 @@
 <div align=center><img src="https://github.com/AetherLynx/lesrevesauchocolat/blob/main/files/lrac_banner.png" width="60%" height="60%"></div>
 
-<h3 align=center>PROGRESS MADE: 10 / 30</h3>
-<h4 align=center>33.33% / 100%</h4>
+<h3 align=center>PROGRESS MADE: 14 / 30</h3>
+<h4 align=center>46% / 100%</h4>
 
 ## SOBRE NOSOTROS
 - [ ] 1. Misión
@@ -25,10 +25,10 @@
 
 ## PEDIDOS
 - [x] 15. Crear 1 pedido máximo por cuenta
-- [ ] 16. Página de consulta del pedido
-- [ ] 17. Ver estado del pedido (Pedido Enviado -> Pedido Recibido -> Pedido Rechazado / Creando Pedido -> Pedido Despachado -> Pedido Entregado -> Confirmar Recibido)
-- [ ] 18. Editar detalles del pedido (Solo cuando esté en [PEDIDO ENVIADO])
-- [ ] 19. Cancelar pedido (Solo cuando esté en [PEDIDO ENVIADO])
+- [x] 16. Página de consulta del pedido
+- [x] 17. Ver estado del pedido (Pedido Enviado -> Pedido Recibido -> Pedido Rechazado / Creando Pedido -> Pedido Despachado -> Pedido Entregado -> Confirmar Recibido)
+- [x] ~~18. Editar detalles del pedido (Solo cuando esté en [PEDIDO ENVIADO])~~
+- [x] 19. Cancelar pedido (Solo cuando esté en [PEDIDO ENVIADO])
 - [ ] 20. Enviar enlace para poder ver el pedido de otra persona
 
 ## ADMINISTRADORES
