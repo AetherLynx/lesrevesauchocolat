@@ -2,6 +2,31 @@
 <div id="sidebar">
     <div id="main">
         <img type="banner" src="files/lrac_banner.png">
+
+        <div class="sideitem main-start">
+            <a href="userconfig.php">
+                <icon>
+                    <img src="files/userpfp/<?php echo $_SESSION["user_pfp"] ?>" type="sideIcon" class='main-nm'>
+                </icon>
+                <div>
+                    <p class='main-textcenter main-nmb main-nmt main-textleft' style='max-width: 10rem;'><?php echo $_SESSION["user_name"] ?></p>
+                    <p s="sub">Configurar cuenta</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="sideitem">
+            <a href='shopcart.php'>
+                <icon>
+                    <script>
+                        document.write(cartn)
+                    </script>
+                </icon>
+                Tu carrito de compras
+            </a>
+        </div>
+
+
         <div class="sideitem">
             <a href="main.php">
                 <icon>
@@ -10,17 +35,6 @@
                     </script>
                 </icon>
                 Sobre nosotros
-            </a>
-        </div>
-
-        <div class="sideitem">
-            <a href="#">
-                <icon>
-                    <script>
-                        document.write(offer)
-                    </script>
-                </icon>
-                Ofertas y descuentos
             </a>
         </div>
 
@@ -36,26 +50,43 @@
         </div>
 
         <div class="sideitem">
-            <a href="#">
+            <a>
                 <icon>
                     <script>
-                        document.write(user)
+                        document.write(lupa)
                     </script>
                 </icon>
-                Configuración de cuenta
+                Buscar otros usuarios
             </a>
         </div>
 
         <div class="sideitem">
-            <a href="#">
+            <a href='ordersquery.php'>
                 <icon>
                     <script>
                         document.write(track)
                     </script>
                 </icon>
-                Consultar pedidos
+                Consultar pedido activo
             </a>
         </div>
+
+        <?php
+        if ($_SESSION["data_isAdmin"]) {
+            echo "
+                <div class='sideitem'>
+                    <a href='adminindex.php'>
+                        <icon>
+                            <script>
+                                document.write(admin)
+                            </script>
+                        </icon>
+                        Portal de administradores
+                    </a>
+                </div>
+                ";
+        }
+        ?>
 
         <div class="sideitem">
             <a href="conns/logout.php">

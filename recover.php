@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="files/placeholdericon.png" type="image/x-icon">
     <script src="scripts/icons.js"></script>
+    <script src="scripts/stuff.js"></script>
     <title>Recuperación de cuenta</title>
 </head>
 
@@ -22,6 +24,27 @@
     <div class="center">
 
         <div id="altcont" class="middlebody">
+            <?php
+            if (isset($_SESSION["error_recovmail404"])) {
+                echo "
+                        <div class='popup' id='popup'>
+                            <div>
+                                <p>No se encontró una cuenta asociada a el correo introducido.</p>
+                            </div>
+                        </div>
+                    ";
+                unset($_SESSION["error_recovmail404"]);
+            } elseif (isset($_SESSION["error_answerNotmatched"])) {
+                echo "
+                        <div class='popup' id='popup'>
+                            <div>
+                                <p>La respuesta que introduciste no es correcta.</p>
+                            </div>
+                        </div>
+                    ";
+                unset($_SESSION["error_answerNotmatched"]);
+            }
+            ?>
             <h1>Recuperación de cuenta</h1>
             <p>Por favor introduzca el correo de la cuenta que desea recuperar.</p>
             <form method="post" action="conns/access.php">
@@ -53,24 +76,6 @@
                             </div>
                         </form>
                     ";
-                } elseif (isset($_SESSION["error_recovmail404"])) {
-                    echo "
-                        <div class='popup'>
-                            <div>
-                                <p>No se encontró una cuenta asociada a el correo introducido.</p>
-                            </div>
-                        </div>
-                    ";
-                    unset($_SESSION["error_recovmail404"]);
-                } elseif (isset($_SESSION["error_answerNotmatched"])) {
-                    echo "
-                        <div class='popup'>
-                            <div>
-                                <p>La respuesta que introduciste no es correcta.</p>
-                            </div>
-                        </div>
-                    ";
-                    unset($_SESSION["error_answerNotmatched"]);
                 }
                 ?>
             </div>

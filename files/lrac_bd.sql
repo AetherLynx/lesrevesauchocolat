@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-02-2024 a las 00:48:07
+-- Tiempo de generación: 26-02-2024 a las 22:06:28
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.0.28
 
@@ -24,34 +24,57 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `orders`
+--
+
+CREATE TABLE `orders` (
+  `order_id` int(11) NOT NULL,
+  `order_user` varchar(100) NOT NULL,
+  `order_username` varchar(255) NOT NULL,
+  `order_date` date NOT NULL,
+  `order_address` varchar(200) NOT NULL,
+  `order_state` varchar(255) NOT NULL,
+  `order_product_id` varchar(255) DEFAULT 'NULL',
+  `order_product_options` varchar(255) DEFAULT 'NULL',
+  `order_product_amount` varchar(255) DEFAULT 'NULL',
+  `order_total` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `productdata`
 --
 
 CREATE TABLE `productdata` (
   `product_id` int(11) NOT NULL,
   `product_name` varchar(50) NOT NULL,
-  `product_desc` varchar(100) NOT NULL,
+  `product_desc` varchar(200) NOT NULL,
   `product_uniprice` int(20) NOT NULL,
   `product_ingredients` varchar(200) NOT NULL,
   `product_category` varchar(50) NOT NULL,
-  `product_image` varchar(50) NOT NULL
+  `product_image` varchar(50) NOT NULL,
+  `product_options` varchar(500) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `productdata`
 --
 
-INSERT INTO `productdata` (`product_id`, `product_name`, `product_desc`, `product_uniprice`, `product_ingredients`, `product_category`, `product_image`) VALUES
-(5, 'Buñuelo', 'Buñuelo crocante y fresco, hecho con un queso de buena calidad!', 1000, 'Queso costeño, Harina, Almidón de yuca, Leche, Azucar, Huevos, Polvo para Hornear y Sal, freído en aceite.', 'Panaderia', '2.jpg'),
-(6, 'Pan Queso Costeño', 'Un pan ampliamente relleno de queso, ideal para un desayuno cargado.', 3000, 'Harina, huevo, queso doble crema, leche, agua, polvo para hornear, mantequilla.', 'Panaderia', '1.jpg'),
-(7, 'Eclair', 'Eclair con chocolate, relleno de crema, bastante dulce.', 10000, 'Agua, leche, azucar, harina de trigo, huevos, chocolate derretido, crema chantillí, extracto de vainilla', 'Panaderia', '3.jpg'),
-(8, 'Alfajor', 'Un alfajor que se desintegra con cada mordida! Muy dulce y rico.', 1200, 'harina, maizena, arequipe, leche', 'Pasteleria', '4.jpg'),
-(9, 'Posset de Limón', 'Un delicioso posset de limón, 1 porción de apróx. 50g.', 1500, 'Crema, azucar, nata, limón, leche condensada y gelatina sin sabor.', 'Pasteleria', 'posset.jpg'),
-(10, 'Muffin de Chocolate Milo', 'Un muffin esponjado hecho a base de chocolate y Milo, bastante dulce.', 2000, 'Milo, Chocolate, Harina, Polvo para hornear, huevos, leche entera y agua.', 'Pasteleria', 'muffin.png'),
-(11, 'Cheesecake Frutos Rojos', 'Cheesecake con aderezo dulce de frutos rojos, contiene una rica y crocante base de galleta. (1 porci', 1500, 'Leche condensada, Queso Crema, Caramelo de frutos rojos, galletas.', 'Pasteleria', 'cheesecake.jpg'),
-(12, 'Brownie con Helado', 'Brownie esponjoso con una bola de helado adicionada!', 4500, 'Bola de helado, brownie de chocolate: Harina, chocolate en polvo, huevos, agua y leche.', 'Heladeria', 'brownieconhelado.jpg'),
-(13, 'Sundae de Chocolate', 'Sundae con crema de chocolate.', 2500, 'Leche, leche condensada, crema, syrup de chocolate.', 'Heladeria', 'sundae.jpg'),
-(14, 'Malteada de Helado', 'Malteada espesa del helado de sabor que desees! 12 onzas.', 5000, '2 bolas de Helado de elección, 350ml de Leche entera.', 'Heladeria', 'malteada.jpg');
+INSERT INTO `productdata` (`product_id`, `product_name`, `product_desc`, `product_uniprice`, `product_ingredients`, `product_category`, `product_image`, `product_options`) VALUES
+(6, 'Panqueso Costeño', 'Un pan ampliamente relleno de queso, ideal para un buen desayuno o un cafe en la tarde!', 5000, 'Harina, huevo, queso doble crema, leche, agua, polvo para hornear, mantequilla.', 'Panaderia', '1.jpg', NULL),
+(7, 'Eclair', 'Eclair con chocolate, relleno de crema, bastante dulce.', 10000, 'Agua, leche, azucar, harina de trigo, huevos, chocolate derretido, crema chantillí, extracto de vainilla', 'Panaderia', '3.jpg', NULL),
+(8, 'Alfajor', 'Un alfajor que se desintegra con cada mordida! Muy dulce y rico.', 1200, 'harina, maizena, arequipe, leche', 'Pasteleria', '4.jpg', NULL),
+(9, 'Posset de Limón', 'Un delicioso posset de limón, 1 porción de apróx. 50g.', 1500, 'Crema, azucar, nata, ralladura de limon, jugo de limon, leche condensada y gelatina sin sabor.', 'Pasteleria', 'posset.jpg', NULL),
+(10, 'Muffin de Chocolate', 'Un muffin esponjado hecho a base de chocolate y Milo, bastante dulce.', 2000, 'Cocoa en Polvo, Harina, huevos, leche entera, Polvo para hornear, huevos y mantequilla.', 'Pasteleria', 'muffin.png', NULL),
+(11, 'Cheesecake', 'Cheesecake con aderezo dulce de frutos rojos, contiene una rica y crocante base de galleta. (1 porci', 2400, 'Leche condensada, Queso Crema, Salsa de frutos rojos, galletas.', 'Pasteleria', 'cheesecake.jpg', 'Frutos Rojos, Maracuyá, Oreo, Mango'),
+(12, 'Brownie con Helado', 'Brownie esponjoso con una bola de helado adicionada!', 4500, 'Bola de helado, brownie de chocolate: Harina, chocolate en polvo, huevos, agua y leche.', 'Heladeria', 'brownieconhelado.jpg', NULL),
+(13, 'Sundae', 'Un delicioso y cremoso Sundae, que puedes pedir con la salsa que gustes!', 2500, 'Leche, leche condensada, crema, salsa o syrup a elección.', 'Heladeria', 'sundae.jpg', 'Solo (sin crema), Chocolate, Fresa, Mora, Arequipe'),
+(21, 'Gelato', 'Un postre helado italiano antecesor al helado! Es bastante dulce, menos\r\ngrasoso y contiene mas leche', 4000, '3,35% de leche, azúcar, con el ingrediente saborizante que tu elijas :)', 'Heladeria', 'gelatto.png', NULL),
+(27, 'Beignet', 'Buñuelo de origen estadounidense frito en aceite caliente, espolvoreado con azucar glass y perfecto para ser acompañado con la bebida de tu seleccion', 2000, 'leche entera, harina de fuerza, levadura, azucar, bicabornato de sodio, azucar glass, sal. Freido en aceite para su coccion', 'Panaderia', 'beignet.jpg', NULL),
+(28, 'Chifon de limon y arandanos', 'Pastel chifon de sabor limon, relleno con crema de limon, frosting de arandanos, y decorado con flores comestibles. (1unid equivale a un pastel completo)', 45000, 'Huevos, Azucar, leche entera, relladura de limon, jugo de limon, mantequilla sin sal, sal kosher, polvo para hornear, frosting de queso crema de arandanos (decoracion y relleno), crema de limon', 'Pasteleria', 'falopa.jpg', NULL),
+(29, 'Pastel de helado', 'Pastel de helado con base de galleta, helado de vainilla y rosa, crema batida, y cerezas y arandanos como decoracion', 6000, 'Base de galleta de chocolate molida, mantequilla sin sal, leche condensada, crema de leche, queso crema, crema batida, helado de fresa, helado de vainilla, regentina, frutas para decorar', 'Heladeria', 'aaa.jpg', NULL),
+(30, 'Torta Guiness', 'Pastel de chocolate elaborado con cerveza guiness, alta intensidad de sabor y humedad', 35000, 'Cerveza begra guiness, cocoa en polvo sin azucar, azucar blanca, azucar morena, sal, mantequilla, buttermilk, levadura quimica, huevos, queso crema, azucar glass, crema batida', 'Pasteleria', 'guiness.jpg', NULL);
 
 -- --------------------------------------------------------
 
@@ -62,16 +85,9 @@ INSERT INTO `productdata` (`product_id`, `product_name`, `product_desc`, `produc
 CREATE TABLE `scdata` (
   `user_mail` varchar(50) NOT NULL,
   `user_product` int(11) NOT NULL,
-  `sc_prodAmount` int(11) NOT NULL
+  `sc_prodAmount` int(11) NOT NULL,
+  `sc_prodOption` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Volcado de datos para la tabla `scdata`
---
-
-INSERT INTO `scdata` (`user_mail`, `user_product`, `sc_prodAmount`) VALUES
-('correo1', 14, 0),
-('correo1', 12, 0);
 
 -- --------------------------------------------------------
 
@@ -80,26 +96,36 @@ INSERT INTO `scdata` (`user_mail`, `user_product`, `sc_prodAmount`) VALUES
 --
 
 CREATE TABLE `userdata` (
+  `userid` int(11) NOT NULL,
   `name` varchar(20) NOT NULL,
   `pass` varchar(20) NOT NULL,
   `mail` varchar(50) NOT NULL,
   `question` varchar(50) NOT NULL,
   `qanswer` varchar(50) NOT NULL,
   `numtel` varchar(50) NOT NULL,
-  `tempcode` varchar(50) NOT NULL
+  `userRole` varchar(10) NOT NULL,
+  `adminCode` int(11) NOT NULL,
+  `pfp` varchar(300) NOT NULL DEFAULT 'default.png',
+  `address` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `userdata`
 --
 
-INSERT INTO `userdata` (`name`, `pass`, `mail`, `question`, `qanswer`, `numtel`, `tempcode`) VALUES
-('1', '12', 'correo1', '2 + 4 = 4?', 'si', '', ''),
-('asdasd', 'asdasdas', 'asdasdsad@a', 'asdasd', 'asdasdas', '', '');
+INSERT INTO `userdata` (`userid`, `name`, `pass`, `mail`, `question`, `qanswer`, `numtel`, `userRole`, `adminCode`, `pfp`, `address`) VALUES
+(1, 'Samuel Martinez', 'salchi', 'samimesa2000@gmail.com', '2 + 2 = 4?', 'si', '314 6928859', 'admin', 0, 'sharkie.png', 'Cra 83F #53A-51'),
+(2, 'Victor Figueroa', 'salchi', 'raviollinolli@gmail.com', 'te gustan los tiburones?', 'SI', '3100000000', 'user', 0, 'default.png', 'mi casa :3');
 
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `orders`
+--
+ALTER TABLE `orders`
+  ADD PRIMARY KEY (`order_id`);
 
 --
 -- Indices de la tabla `productdata`
@@ -108,14 +134,32 @@ ALTER TABLE `productdata`
   ADD PRIMARY KEY (`product_id`);
 
 --
+-- Indices de la tabla `userdata`
+--
+ALTER TABLE `userdata`
+  ADD PRIMARY KEY (`userid`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
+
+--
+-- AUTO_INCREMENT de la tabla `orders`
+--
+ALTER TABLE `orders`
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de la tabla `productdata`
 --
 ALTER TABLE `productdata`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+
+--
+-- AUTO_INCREMENT de la tabla `userdata`
+--
+ALTER TABLE `userdata`
+  MODIFY `userid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

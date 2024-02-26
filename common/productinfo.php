@@ -1,26 +1,39 @@
 <?php
+//check first-hand if logged in
+if (isset($_SESSION["loggedin"])) {
+    if ($_SESSION["loggedin"] == false) {
+        $_SESSION["error_notLogged"] = true;
+        header("location: login.php");
+    }
+}
+
 if (isset($_GET["id"])) {
     $getid = $_GET["id"];
     $_SESSION["session_origin"] = $_GET["sc"];
-    if (isset($_GET["confirmAdd"])) {
-        $confirmAdd = $_GET["confirmAdd"];
-        echo "<script>console.log('" . $confirmAdd . "')</script>";
-        if ($confirmAdd == "1") {
-            echo "
-            <div class='popup'>
+    if (isset($_SESSION["pi_confirmAdd"])) {
+        switch ($_SESSION["pi_confirmAdd"]) {
+            case "1":
+                echo "
+            <div class='popup' id='popup'>
                 <div>
                     <p>El producto fue añadido a tu carrito! :)</p>
                 </div>
             </div>
             ";
-        } else if ($confirmAdd == "0") {
-            echo "
-            <div class='popup'>
+                unset($_SESSION["pi_confirmAdd"]);
+                break;
+
+
+            case "0":
+                echo "
+            <div class='popup' id='popup'>
                 <div>
-                    <p>El producto fue eliminado de tu carrito. :(</p>
+                    <p>El producto fue eliminado de tu carrito :(</p>
                 </div>
             </div>
             ";
+                unset($_SESSION["pi_confirmAdd"]);
+                break;
         }
     }
     prodinfo($conn, $getid);
@@ -31,22 +44,39 @@ function checkProd($conn)
     $sql = "SELECT * FROM scdata WHERE user_mail = '" . $_SESSION["user_mail"] . "' AND user_product = '" . $_SESSION["session_curProductId"] . "'";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
-        $x = "<script>document.write(minusb);</script><p>Quitar del carrito</p>";
+        $_SESSION["data_canAdd"] = false;
+        $x = "
+            <script>
+                document.write(minusb);
+            </script>
+            <p>Quitar del carrito</p>";
         return $x;
     } else {
-        $x = "<script>document.write(plusb);</script><p>Añadir al carrito</p>";
+        $_SESSION["data_canAdd"] = true;
+        $x = "
+        <script>
+            document.write(plusb);
+        </script>
+        <p>Añadir al carrito</p>";
         return $x;
     }
+}
+
+function checkForm()
+{
 }
 
 //to check if user comes from shopping cart or catalogue :)
 function checkOrigin($conn)
 {
+    if (!isset($_SESSION["data_curFilter"])) {
+        $_SESSION["data_curFilter"] = 0;
+    }
     if (isset($_GET["sc"])) {
         $sc = $_GET["sc"];
         if ($sc == "0") {
             $x = "
-                <a href='catalogue.php?filter=0'>
+                <a href='catalogue.php?filter={$_SESSION["data_curFilter"]}'>
                     <div class='icontext'>
                         <script>
                             document.write(leftb);
@@ -68,9 +98,36 @@ function checkOrigin($conn)
                 </a>
                 ";
             return $x;
+        } else if ($sc == "2") {
+            $x = "
+                <a href='ordersquery.php'>
+                    <div class='icontext'>
+                        <script>
+                            document.write(leftb);
+                        </script>
+                        <p>Volver a consultar tu pedido</p>
+                    </div>
+                </a>
+                ";
+            return $x;
         }
     } else {
         echo "<script>console.log('can't get id[sc]')</script>";
+    }
+}
+
+function adminFunctionality($getid)
+{
+    if ($_SESSION["data_isAdmin"]) {
+        $y = "
+            <a href='adminprodmng.php?modproduct=$getid'  class='icontext main-maxw main-buttonpadding'>
+                <script>
+                document.write(configb);
+                </script>
+                <p>Modificar producto</p>
+            </a>
+        ";
+        return $y;
     }
 }
 
@@ -93,10 +150,18 @@ function showProduct($result, $conn)
         $product_ingredients = $row["product_ingredients"];
         $product_category = $row["product_category"];
         $product_image = $row["product_image"];
+        $product_options = $row["product_options"];
+
+        if ($product_options != null) {
+            $showSelect = true;
+        }
+
+        $array_options = explode(", ", $product_options);
 
         changeColors($product_category);
         $buttonDisplay = checkProd($conn);
         $backType = checkOrigin($conn);
+        $adminModify = adminFunctionality($product_id);
 
         echo "
             $backType
@@ -105,14 +170,40 @@ function showProduct($result, $conn)
 
                 <div class='catalog-leftdetails'>
                     <img src='files/products/" . $product_image . "' type='viewproduct'>
-                    <h2 style='text-align:center' t='bb'>Precio: $" . $product_uniprice . "</h2>
-                    <a href='common/addproduct.php?id=" . $product_id . "'>
+                    <h2 style='text-align:center' t='bb'>Precio: $" . formatCop($product_uniprice) . "</h2>
+                    <form style='margin: 0;' method='post' class='main-maxw main-nm' action='common/addproduct.php?id=$product_id'>
+                        ";
 
-                        <div class='icontext'>
-                            " . $buttonDisplay . "
+        if ($_SESSION["data_canAdd"] == true) {
+            echo "
+            <div class='main-nm'>
+                <div class='main-row main-textcenter'>
+                    <div class='main-row'>
+                        <p>Cantidad: </p>
+                        <input type='number' class='main-inputalt main-textcenter' style='width: 3em' min='1' max='10' value='1' name='product_amount'>
+            ";
+            if (isset($showSelect)) {
+                echo "
+                <p>Opciones: </p>
+                <select name='product_option' class='main-select'>";
+                foreach ($array_options as $value) {
+                    echo "<option value='$value'>$value</option>";
+                }
+                echo "</select>";
+            }
+            echo "
                         </div>
+                    </div>
+                </div>
+            ";
+        }
 
-                    </a>
+        echo "                        
+                        <button class='icontext main-maxw main-buttonpadding' type='submit' name='prodAmount_set'>
+                            " . $buttonDisplay . "
+                        </button>
+                    $adminModify
+                    </form>
                 </div>
 
                 <div class='catalog-rightdetails'>
@@ -168,4 +259,10 @@ function changeColors($product_category)
                 ";
             break;
     }
+}
+
+function formatCOP($value)
+{
+    $x = number_format($value, 0, '', '.');
+    return $x;
 }
