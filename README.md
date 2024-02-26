@@ -1,5 +1,7 @@
-## Les Reves Au Chocolat / Los Sueños de Chocolate
-### PROGRESO: 10/30 (33.33%)
+<div align=center><img src="https://github.com/AetherLynx/lesrevesauchocolat/blob/main/files/lrac_banner.png" width="60%" height="60%"></div>
+
+<h3 align=center>PROGRESS MADE: 10 / 30</h3>
+<h4 align=center>33.33% / 100%</h4>
 
 ## SOBRE NOSOTROS
 - [ ] 1. Misión
