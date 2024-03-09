@@ -34,9 +34,9 @@
 ## ADMINISTRADORES
 - [x] 21. Añadir productos
 - [x] 22. Eliminar productos
-- [ ] 23. Consultar pedidos activos
-- [ ] 24. Modificar estado de los pedidos como administrador
-- [ ] 25. Rechazar pedidos
+- [X] 23. Consultar pedidos activos
+- [X] 24. Modificar estado de los pedidos como administrador
+- [X] 25. Rechazar pedidos
 - [ ] 26. Consultar usuarios y modificar sus datos/borrar su cuenta
 
 ## FUNCIONALIDAD
