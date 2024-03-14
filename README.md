@@ -1,7 +1,7 @@
 <div align=center><img src="https://github.com/AetherLynx/lesrevesauchocolat/blob/main/files/lrac_banner.png" width="60%" height="60%"></div>
 
-<h3 align=center>PROGRESS MADE: 17 / 30</h3>
-<h4 align=center>56% / 100%</h4>
+<h3 align=center>PROGRESS MADE: 19 / 30</h3>
+<h4 align=center>63% / 100%</h4>
 
 ## SOBRE NOSOTROS
 - [ ] 1. Misión
@@ -20,8 +20,8 @@
 - [x] 10. Eliminar cuenta
 - [ ] 11. Cambiar contraseña
 - [x] 12. Cambiar foto de perfil
-- [ ] 13. Cambiar Bio
-- [ ] 14. Perfil público
+- [X] 13. Cambiar Bio
+- [X] 14. Perfil público
 
 ## PEDIDOS
 - [x] 15. Crear 1 pedido máximo por cuenta
