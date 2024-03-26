@@ -1,7 +1,7 @@
 <div align=center><img src="https://github.com/AetherLynx/lesrevesauchocolat/blob/main/files/lrac_banner.png" width="60%" height="60%"></div>
 
-<h3 align=center>PROGRESS MADE: 23 / 28</h3>
-<h4 align=center>82% / 100%</h4>
+<h3 align=center>PROGRESS MADE: 23 / 29</h3>
+<h4 align=center>79% / 100%</h4>
 
 ## SOBRE NOSOTROS
 - [ ] 1. Misión
@@ -42,6 +42,7 @@
 - [X] 26. Creación de pasteles
 - [X] 27. Publicación de pasteles como productos públicos para todos los usuarios
 - [X] 28. Categoria para creaciones de los usuarios dentro del catálogo
+- [ ] 29. Comentarios en productos y usuarios
 
 ### DISEÑO / ARTE
 - [ ] Nuevo banner
