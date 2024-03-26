@@ -1,7 +1,7 @@
 <div align=center><img src="https://github.com/AetherLynx/lesrevesauchocolat/blob/main/files/lrac_banner.png" width="60%" height="60%"></div>
 
-<h3 align=center>PROGRESS MADE: 23 / 30</h3>
-<h4 align=center>76% / 100%</h4>
+<h3 align=center>PROGRESS MADE: 23 / 28</h3>
+<h4 align=center>82% / 100%</h4>
 
 ## SOBRE NOSOTROS
 - [ ] 1. Misión
@@ -18,7 +18,7 @@
 ## CUENTAS
 - [x] 9. Actualizar datos de cuenta
 - [x] 10. Eliminar cuenta
-- [ ] 11. Cambiar contraseña
+- [X] 11. Cambiar contraseña
 - [x] 12. Cambiar foto de perfil
 - [X] 13. Cambiar Bio
 - [X] 14. Perfil público
@@ -27,23 +27,21 @@
 - [x] 15. Crear 1 pedido máximo por cuenta
 - [x] 16. Página de consulta del pedido
 - [x] 17. Ver estado del pedido (Pedido Enviado -> Pedido Recibido -> Pedido Rechazado / Creando Pedido -> Pedido Despachado -> Pedido Entregado -> Confirmar Recibido)
-- [x] ~~18. Editar detalles del pedido (Solo cuando esté en [PEDIDO ENVIADO])~~
-- [x] 19. Cancelar pedido (Solo cuando esté en [PEDIDO ENVIADO])
-- [ ] 20. Enviar enlace para poder ver el pedido de otra persona
+- [x] 18. Cancelar pedido (Solo cuando esté en [PEDIDO ENVIADO])
 
 ## ADMINISTRADORES
-- [x] 21. Añadir productos
-- [x] 22. Eliminar productos
-- [X] 23. Consultar pedidos activos
-- [X] 24. Modificar estado de los pedidos como administrador
-- [X] 25. Rechazar pedidos
-- [ ] 26. Consultar usuarios y modificar sus datos/borrar su cuenta
+- [x] 19. Añadir productos
+- [x] 20. Eliminar productos
+- [X] 21. Consultar pedidos activos
+- [X] 22. Modificar estado de los pedidos como administrador
+- [X] 23. Rechazar pedidos
+- [ ] 24. Consultar usuarios y modificar sus datos/borrar su cuenta
 
 ## FUNCIONALIDAD
-- [x] 27. Menú desplegable para navegación
-- [X] 28. Creación de pasteles
-- [X] 29. Publicación de pasteles como productos públicos para todos los usuarios
-- [X] 30. Categoria para creaciones de los usuarios dentro del catálogo
+- [x] 25. Menú desplegable para navegación
+- [X] 26. Creación de pasteles
+- [X] 27. Publicación de pasteles como productos públicos para todos los usuarios
+- [X] 28. Categoria para creaciones de los usuarios dentro del catálogo
 
 ### DISEÑO / ARTE
 - [ ] Nuevo banner
