@@ -4,11 +4,11 @@
 <h4 align=center>82% / 100%</h4>
 
 ## SOBRE NOSOTROS
-- [ ] 1. Misión
-- [ ] 2. Visión
+- [X] 1. Misión
+- [X] 2. Visión
 - [X] 3. Qué servicios ofrecemos
-- [ ] 4. Descripción de la empresa
-- [ ] 5. Que puedes hacer en nuestro sitio web
+- [X] 4. Descripción de la empresa
+- [X] 5. Que puedes hacer en nuestro sitio web
 
 ## CATALOGO DE PRODUCTOS
 - [X] 6. Filtrar por categoría
@@ -35,7 +35,7 @@
 - [X] 21. Consultar pedidos activos
 - [X] 22. Modificar estado de los pedidos como administrador
 - [X] 23. Rechazar pedidos
-- [ ] 24. Consultar usuarios y modificar sus datos/borrar su cuenta
+- [X] 24. Consultar usuarios y modificar sus datos/borrar su cuenta
 
 ## FUNCIONALIDAD
 - [x] 25. Menú desplegable para navegación
