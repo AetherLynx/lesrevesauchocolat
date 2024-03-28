@@ -1,7 +1,8 @@
 <div align=center><img src="https://github.com/AetherLynx/lesrevesauchocolat/blob/main/files/lrac_banner.png" width="60%" height="60%"></div>
 
-<h3 align=center>PROGRESS MADE: 24 / 29</h3>
-<h4 align=center>82% / 100%</h4>
+<h3 align=center>PROYECTO TERMINADO</h3>
+<h3 align=center>PROGRESS MADE: 29 / 29</h3>
+<h4 align=center>100% / 100%</h4>
 
 ## SOBRE NOSOTROS
 - [X] 1. Misión
