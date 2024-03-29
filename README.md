@@ -1,5 +1,4 @@
 <div align=center><img src="https://github.com/AetherLynx/lesrevesauchocolat/blob/main/LRAC_v1/files/lrac_banner.png" width="60%" height="60%"></div>
-<div align=center><img src="" width="60%" height="60%"></div>
 
 <h3 align=center>PROYECTO TERMINADO</h3>
 <h3 align=center>PROGRESS MADE: 29 / 29</h3>
