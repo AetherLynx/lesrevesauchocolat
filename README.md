@@ -4,6 +4,11 @@
 <h3 align=center>PROGRESS MADE: 29 / 29</h3>
 <h4 align=center>100% / 100%</h4>
 
+## MEJORAS ENTREGA FINAL
+- [X] Cambiar metodo de login -> correo + contraseña
+- [ ] Re-diseñar el manejo de cuenta [tabs a la izquierda -> toggle pages with js]
+- [ ] Cambiar solicitudes de borrar cuenta por eliminar toda la información asociada al usuario (carrito, creaciones, comentarios, foros, todooo (agh) )
+
 ## SOBRE NOSOTROS
 - [X] 1. Misión
 - [X] 2. Visión
