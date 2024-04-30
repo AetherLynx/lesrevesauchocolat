@@ -57,4 +57,4 @@
 
 ### DISEÑO / ARTE
 - [ ] Nuevo banner
-- [ ] Nuevo logo
+- [X] Nuevo logo
