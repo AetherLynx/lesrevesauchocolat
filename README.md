@@ -8,6 +8,7 @@
 - [X] Cambiar metodo de login -> correo + contraseña
 - [ ] Re-diseñar el manejo de cuenta [tabs a la izquierda -> toggle pages with js]
 - [ ] Cambiar solicitudes de borrar cuenta por eliminar toda la información asociada al usuario (carrito, creaciones, comentarios, foros, todooo (agh) )
+- [ ] Cambiar el color de ajustes de la cuenta acorde al guardado
 
 ## SOBRE NOSOTROS
 - [X] 1. Misión
