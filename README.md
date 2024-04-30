@@ -1,14 +1,18 @@
-<div align=center><img src="https://github.com/AetherLynx/lesrevesauchocolat/blob/main/LRAC_v1/files/lrac_banner.png" width="60%" height="60%"></div>
+<div align=center>
+  <img src="https://media.discordapp.net/attachments/1099397168403578882/1235007532737757334/nollyicon.png?ex=6632cde5&is=66317c65&hm=c8c82e8ad18eeccfeca12b4ac1cbcf0e056739fec5b181818512d267aadb6247&=&format=webp&quality=lossless&width=449&height=449" width="20%" height="20%">
+  <img src="https://github.com/AetherLynx/lesrevesauchocolat/blob/main/LRAC_v1/files/lrac_banner.png" width="60%" height="60%">
+</div>
 
-<h3 align=center>PROYECTO TERMINADO</h3>
-<h3 align=center>PROGRESS MADE: 29 / 29</h3>
-<h4 align=center>100% / 100%</h4>
+> Proyecto principal completo (100%)
+
+> Versión codigo fuente: v1 (Marzo 28, 2024)
 
 ## MEJORAS ENTREGA FINAL
 - [X] Cambiar metodo de login -> correo + contraseña
 - [ ] Re-diseñar el manejo de cuenta [tabs a la izquierda -> toggle pages with js]
-- [ ] Cambiar solicitudes de borrar cuenta por eliminar toda la información asociada al usuario (carrito, creaciones, comentarios, foros, todooo (agh) )
+- [ ] Modificar solicitudes de borrar cuenta para que elimine toda la información asociada al usuario
 - [ ] Cambiar el color de ajustes de la cuenta acorde al guardado
+---
 
 ## SOBRE NOSOTROS
 - [X] 1. Misión
