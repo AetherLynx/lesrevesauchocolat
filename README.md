@@ -9,9 +9,9 @@
 
 ## MEJORAS ENTREGA FINAL
 - [X] Cambiar metodo de login -> correo + contraseña
-- [ ] Re-diseñar el manejo de cuenta [tabs a la izquierda -> toggle pages with js]
+- [X] Re-diseñar el manejo de cuenta [tabs a la izquierda -> toggle pages with js]
 - [ ] Modificar solicitudes de borrar cuenta para que elimine toda la información asociada al usuario
-- [ ] Cambiar el color de ajustes de la cuenta acorde al guardado
+- [X] Cambiar el color de ajustes de la cuenta acorde al guardado
 ---
 
 ## SOBRE NOSOTROS
