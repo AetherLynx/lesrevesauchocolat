@@ -15,6 +15,7 @@
 - [ ] Marcas de agua de Lumine
 - [ ] Opciones de configuración
 - [ ] Remove the slider in input:number in Register
+- [ ] Mention various products in forums
 ---
 
 ## SOBRE NOSOTROS
