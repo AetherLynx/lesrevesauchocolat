@@ -16,6 +16,7 @@
 - [ ] Opciones de configuración
 - [ ] Remove the slider in input:number in Register
 - [ ] Mention various products in forums
+- [ ] Make forum body's font a bit smaller
 ---
 
 ## SOBRE NOSOTROS
