@@ -12,6 +12,9 @@
 - [X] Re-diseñar el manejo de cuenta [tabs a la izquierda -> toggle pages with js]
 - [X] Modificar solicitudes de borrar cuenta para que elimine toda la información asociada al usuario
 - [X] Cambiar el color de ajustes de la cuenta acorde al guardado
+- [ ] Marcas de agua de Lumine
+- [ ] Opciones de configuración
+- [ ] Remove the slider in input:number in Register
 ---
 
 ## SOBRE NOSOTROS
