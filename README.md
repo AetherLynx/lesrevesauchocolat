@@ -8,16 +8,17 @@
 > Versión codigo fuente: v1 (Marzo 28, 2024)
 
 ## MEJORAS ENTREGA FINAL
+> (v): sugerencias de victor :3
 - [X] Cambiar metodo de login -> correo + contraseña
 - [X] Re-diseñar el manejo de cuenta [tabs a la izquierda -> toggle pages with js]
 - [X] Modificar solicitudes de borrar cuenta para que elimine toda la información asociada al usuario
 - [X] Cambiar el color de ajustes de la cuenta acorde al guardado
 - [ ] Marcas de agua de Lumine
 - [ ] Opciones de configuración
-- [ ] Remove the slider in input:number in Register (p)
+- [ ] Remove the slider in input:number in Register (v)
 - [ ] Add ability to mention various products in forum posts
-- [ ] Make forum posts body's font a bit smaller (p)
-- [ ] Add "Descafeinado" for product specifications (p)
+- [ ] Make forum posts body's font a bit smaller (v)
+- [ ] Add "Descafeinado" for product specifications (v)
 - [ ] Add plus and minus buttons for products
 ---
 
