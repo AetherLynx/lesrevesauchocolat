@@ -18,7 +18,7 @@
 - [ ] Remove the slider in input:number in Register (v)
 - [ ] Add ability to mention various products in forum posts
 - [X] Make forum posts body's font a bit smaller (v)
-- [ ] Add "Descafeinado" for product specifications (v)
+- [X] Add "Descafeinado" for product specifications (v)
 - [ ] Add plus and minus buttons for products
 - [ ] Actually add delivery fee ($8.000COP)
 ---
