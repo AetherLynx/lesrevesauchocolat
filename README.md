@@ -14,9 +14,11 @@
 - [X] Cambiar el color de ajustes de la cuenta acorde al guardado
 - [ ] Marcas de agua de Lumine
 - [ ] Opciones de configuración
-- [ ] Remove the slider in input:number in Register
-- [ ] Mention various products in forums
-- [ ] Make forum body's font a bit smaller
+- [ ] Remove the slider in input:number in Register (p)
+- [ ] Add ability to mention various products in forum posts
+- [ ] Make forum posts body's font a bit smaller (p)
+- [ ] Add "Descafeinado" for product specifications (p)
+- [ ] Add plus and minus buttons for products
 ---
 
 ## SOBRE NOSOTROS
