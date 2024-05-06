@@ -14,13 +14,13 @@
 - [X] Modificar solicitudes de borrar cuenta para que elimine toda la información asociada al usuario
 - [X] Cambiar el color de ajustes de la cuenta acorde al guardado
 - [X] Marcas de agua de Lumine
-- [ ] Opciones de configuración
-- [ ] Remove the slider in input:number in Register (v)
-- [ ] Add ability to mention various products in forum posts
+- [X] Remove the slider in input:number in Register (v)
+- [ ] Add ability to mention various products in forum posts (v)
 - [X] Make forum posts body's font a bit smaller (v)
 - [X] Add "Descafeinado" for product specifications (v)
 - [ ] Add plus and minus buttons for products
-- [ ] Actually add delivery fee ($8.000COP)
+- [X] Actually add delivery fee ($8.000COP)
+- [ ] Add reviews with stars in product comments mimicking newgrounds rating system (v)
 ---
 
 ## SOBRE NOSOTROS
