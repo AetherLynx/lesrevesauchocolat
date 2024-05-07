@@ -19,8 +19,8 @@
 - [X] Add "Descafeinado" for product specifications (v)
 - [ ] Add plus and minus buttons for products
 - [X] Actually add delivery fee ($8.000COP)
-~~- [ ] Add ability to mention various products in forum posts (v)~~
-~~- [ ] Add reviews with stars in product comments mimicking newgrounds rating system (v)~~
+- [x] ~~Add ability to mention various products in forum posts (v)~~
+- [x] ~~Add reviews with stars in product comments mimicking newgrounds rating system (v)~~
 ---
 
 ## SOBRE NOSOTROS
