@@ -14,7 +14,7 @@
 - [X] Modificar solicitudes de borrar cuenta para que elimine toda la información asociada al usuario
 - [X] Cambiar el color de ajustes de la cuenta acorde al guardado
 - [X] Marcas de agua de Lumine
-- [ ] Add plus and minus buttons for products
+- [X] Add plus and minus buttons for products
 - [X] Actually add delivery fee ($8.000COP)
 - [X] (v) Remove the slider in input:number in Register 
 - [X] (v) Make forum posts body's font a bit smaller
