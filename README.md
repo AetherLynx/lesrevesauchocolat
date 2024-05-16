@@ -16,7 +16,7 @@
 - [X] Marcas de agua de Lumine
 - [X] Add plus and minus buttons for products
 - [X] Actually add delivery fee ($8.000COP)
-- [ ] (v) Check for existing cakes with the ingredients chosen before creating
+- [x] (v) Check for existing cakes with the ingredients chosen before creating
 - [X] (v) Remove the slider in input:number in Register 
 - [X] (v) Make forum posts body's font a bit smaller
 - [X] (v) Add "Descafeinado" for product specifications
