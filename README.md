@@ -1,27 +1,10 @@
 <div align=center>
-  <img src="https://media.discordapp.net/attachments/1099397168403578882/1235007532737757334/nollyicon.png?ex=6632cde5&is=66317c65&hm=c8c82e8ad18eeccfeca12b4ac1cbcf0e056739fec5b181818512d267aadb6247&=&format=webp&quality=lossless&width=449&height=449" width="20%" height="20%">
   <img src="https://github.com/AetherLynx/lesrevesauchocolat/blob/main/LRAC_v1/files/lrac_banner.png" width="60%" height="60%">
 </div>
 
-> Proyecto principal completo (100%)
-
 > Versión codigo fuente: v1 (Marzo 28, 2024)
 
-## MEJORAS ENTREGA FINAL
-> (v): sugerencias de victor :3
-- [X] Cambiar metodo de login -> correo + contraseña
-- [X] Re-diseñar el manejo de cuenta [tabs a la izquierda -> toggle pages with js]
-- [X] Modificar solicitudes de borrar cuenta para que elimine toda la información asociada al usuario
-- [X] Cambiar el color de ajustes de la cuenta acorde al guardado
-- [X] Marcas de agua de Lumine
-- [X] Add plus and minus buttons for products
-- [X] Actually add delivery fee ($8.000COP)
-- [x] (v) Check for existing cakes with the ingredients chosen before creating
-- [X] (v) Remove the slider in input:number in Register 
-- [X] (v) Make forum posts body's font a bit smaller
-- [X] (v) Add "Descafeinado" for product specifications
-- [x] ~~Add ability to mention various products in forum posts (v)~~
-- [x] ~~Add reviews with stars in product comments mimicking newgrounds rating system (v)~~
+### Archivo del proyecto del sena 🤙
 ---
 
 ## SOBRE NOSOTROS
