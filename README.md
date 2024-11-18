@@ -2,10 +2,7 @@
   <img src="https://github.com/AetherLynx/lesrevesauchocolat/blob/main/LRAC_v1/files/lrac_banner.png" width="60%" height="60%">
 </div>
 
-> Versión codigo fuente: v1 (Marzo 28, 2024)
-
 ### Archivo del proyecto del sena 🤙
----
 
 ## SOBRE NOSOTROS
 - [X] 1. Misión
